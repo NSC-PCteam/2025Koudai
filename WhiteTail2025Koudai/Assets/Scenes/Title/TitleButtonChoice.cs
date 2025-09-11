@@ -9,7 +9,6 @@ public class TitleButtonChoice : MonoBehaviour
 
     void Start()
     {
-        button = GameObject.Find("TitleCanvas/ButtonSummary/Button").GetComponent<Button>();
         //ボタンが選択された状態になる
         button.Select();
     }

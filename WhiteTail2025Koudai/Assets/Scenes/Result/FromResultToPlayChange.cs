@@ -7,6 +7,15 @@ public class FromResultToPlayChange: MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadScene("PlayScene");
-    }   
+        GoBack();
+        //SceneManager.LoadScene("PlayScene");
+    }
+
+    public void GoBack()
+    {
+        if (!string.IsNullOrEmpty(SceneSave.previousSceneName))
+        {
+            SceneManager.LoadScene(SceneSave.previousSceneName);
+        }
+    }
 }

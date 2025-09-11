@@ -14,25 +14,25 @@ public class JudgeTest : MonoBehaviour
     void Update()
     {
         //ボタンでノーツの判定を出す
-        if(Input.GetKeyDown(KeyCode.A)) 
+        if(Input.GetKeyDown(KeyCode.F)) 
         {
             Judge=0;
             ScoreCalculater.JudgeNote(Judge);
         }
 
-        if(Input.GetKeyDown(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.G))
         {
             Judge=1;
             ScoreCalculater.JudgeNote(Judge);
         }
 
-        if(Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKeyDown(KeyCode.H))
         {
             Judge=2;
             ScoreCalculater.JudgeNote(Judge);
         }
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.J))
         {
             Judge=3;
             ScoreCalculater.JudgeNote(Judge);

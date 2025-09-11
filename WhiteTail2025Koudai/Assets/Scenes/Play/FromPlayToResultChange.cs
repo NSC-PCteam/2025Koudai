@@ -7,6 +7,10 @@ public class FromPlayToResultChange: MonoBehaviour
 {
     public void OnClick()
     {
+        // 現在のシーン名を保存
+        SceneSave.previousSceneName = SceneManager.GetActiveScene().name;
+
         SceneManager.LoadScene("ResultScene");
+        
     }   
 }
